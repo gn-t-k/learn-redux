@@ -5,8 +5,7 @@ import './ColorfulBeads.css';
 
 // equivalent to https://lodash.com/docs/#range
 // see also https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/from
-const range = (n: number): number[] =>
-  n < 0 ? [] : Array.from(Array(n), (_, i) => i);
+const range = (n: number): number[] => (n < 0 ? [] : Array.from(Array(n), (_, i) => i));
 
 const colors: SemanticCOLORS[] = [
   'red',
