@@ -1,20 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { FC } from 'react';
+
+import ColorfulBeads from 'containers/molecules/ColorfulBeads';
+import CounterBoard from 'containers/organisms/CounterBoard';
+
 import './App.css';
 
-const App: React.FC = () => (
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit
-        <code>src/App.tsx</code>
-        and save to reload.
-      </p>
-      <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-        Learn React
-      </a>
+const App: FC = () => (
+  <div className="container">
+    <header>
+      <h1>ビーズカウンター</h1>
     </header>
+    <CounterBoard />
+    <ColorfulBeads />
   </div>
 );
 
